@@ -16,7 +16,7 @@ jobs:
       - name: deploy to lolipop
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          ftp-server: ${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_HOST }}
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ./home/users/0/pupu.jp-pennn/web/webgl/arts/
