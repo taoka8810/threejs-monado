@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: yarn vite build
+      - run: yarn build
 
       - name: deploy to lolipop
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
